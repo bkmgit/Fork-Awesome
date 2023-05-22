@@ -95,7 +95,8 @@ Then, run the Docker container:
 
 Within the container, build the font:
 
-    $ bundle install --path vendor/bundle
+    $ bundle config set --local path 'vendor/bundle'
+    $ bundle install
     $ npm ci
     $ make -C src/icons
 
